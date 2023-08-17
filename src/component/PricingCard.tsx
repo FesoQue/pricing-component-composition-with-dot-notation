@@ -29,15 +29,21 @@ PricingCard.Body = function PricingCardBody({
     </article>
   );
 };
-PricingCard.Header = function PricingCardHeader({
+PricingCard.Plan = function PricingCardPlan({
   children,
   className,
   ...rest
 }: PricingCardProps) {
   return (
-    <div className={cn(className)} {...rest}>
+    <span
+      className={cn(
+        "inline-block px-3 py-1 text-[#F496D1] bg-[#fa80cd] mb-5 font-semibold rounded-full bg-opacity-10",
+        className
+      )}
+      {...rest}
+    >
       {children}
-    </div>
+    </span>
   );
 };
 PricingCard.Cost = function PricingCardCost({
