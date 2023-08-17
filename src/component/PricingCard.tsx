@@ -64,7 +64,7 @@ PricingCard.Text = function PricingCardText({
   ...rest
 }: PricingCardProps) {
   return (
-    <p className={cn("text-[#848199]", className)} {...rest}>
+    <p className={cn("text-[#848199] mb-5", className)} {...rest}>
       {children}
     </p>
   );
