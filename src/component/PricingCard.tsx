@@ -1,5 +1,6 @@
 import React from "react";
 import { cn } from "../lib/utils";
+import check_circle from "../assets/check-circle.svg";
 
 interface PricingCardProps {
   children: React.ReactNode;
@@ -45,8 +46,9 @@ PricingCard.Cost = function PricingCardCost({
   ...rest
 }: PricingCardProps) {
   return (
-    <div className={cn(className)} {...rest}>
-      {children}
+    <div className={cn("flex items-end gap-[10px] mb-6", className)} {...rest}>
+      <h2 className="text-[#231D4F] text-3xl font-semibold">{children}</h2>
+      <span className="text-[#848199]">/month</span>
     </div>
   );
 };
@@ -61,15 +63,15 @@ PricingCard.Text = function PricingCardText({
     </h2>
   );
 };
-
 PricingCard.Value = function PricingCardValue({
   children,
   className,
   ...rest
 }: PricingCardProps) {
   return (
-    <div className={cn(className)} {...rest}>
-      {children}
+    <div className={cn("flex items-center gap-2 mb-5", className)} {...rest}>
+      <img src={check_circle} alt="check circle" />
+      <p className="text-[#848199]">{children}</p>
     </div>
   );
 };

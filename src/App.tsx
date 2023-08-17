@@ -1,40 +1,54 @@
 import React from "react";
 import Header from "./component/Header";
 import { PricingCard } from "./component/PricingCard";
-import check_circle from "./assets/check-circle.svg";
 
 const App = () => {
   return (
-    <main className="w-[90%] max-w-6xl mx-auto">
+    <main className="w-[90%] max-w-6xl mx-auto pb-10">
       <Header />
-      <PricingCard>
-        <PricingCard.Body>
+      <PricingCard className="grid grid-cols-3 gap-5">
+        <PricingCard.Body className="bg-white p-10 rounded">
           <PricingCard.Header className="mb-5">
-            <PricingCard.Cost className="flex items-end gap-[10px] mb-6">
-              <h2 className="text-[#231D4F] text-3xl font-semibold">$20</h2>
-              <span className="text-[#848199]">/month</span>
-            </PricingCard.Cost>
+            <PricingCard.Cost>$20</PricingCard.Cost>
             <PricingCard.Text>
-              <h2 className="text-[#231D4F] text-3xl mb-3 font-semibold">
-                Intro
-              </h2>
-              <p className="text-[#848199]">
-                For most businesses that want to otpimize web queries
-              </p>
+              For most businesses that want to otpimize web queries
             </PricingCard.Text>
           </PricingCard.Header>
-          <PricingCard.Value className="flex items-center gap-2 mb-3">
-            <img src={check_circle} alt="check circle" />
-            <p className="text-[#848199]">Hello world lorem ipsum</p>
-          </PricingCard.Value>
-          <PricingCard.Value className="flex items-center gap-2 mb-3">
-            <img src={check_circle} alt="check circle" />
-            <p className="text-[#848199]">Hello world lorem ipsum</p>
-          </PricingCard.Value>
-          <PricingCard.Value className="flex items-center gap-2 mb-3">
-            <img src={check_circle} alt="check circle" />
-            <p className="text-[#848199]">Hello world lorem ipsum</p>
-          </PricingCard.Value>
+          <PricingCard.Value>All limited links</PricingCard.Value>
+          <PricingCard.Value>Own analytics platfo</PricingCard.Value>
+          <PricingCard.Value>Chat support</PricingCard.Value>
+          <PricingCard.Value>Optimize hashtags</PricingCard.Value>
+          <PricingCard.Value>Optimize hashtags</PricingCard.Value>
+          <PricingCard.Button>Choose Plan</PricingCard.Button>
+        </PricingCard.Body>
+
+        <PricingCard.Body className="bg-white p-10 rounded">
+          <PricingCard.Header className="mb-5">
+            <PricingCard.Cost>$50</PricingCard.Cost>
+            <PricingCard.Text>
+              For most businesses that want to otpimize web queries
+            </PricingCard.Text>
+          </PricingCard.Header>
+          <PricingCard.Value>All limited links</PricingCard.Value>
+          <PricingCard.Value>Own analytics platfo</PricingCard.Value>
+          <PricingCard.Value>Chat support</PricingCard.Value>
+          <PricingCard.Value>Optimize hashtags</PricingCard.Value>
+          <PricingCard.Value>Optimize hashtags</PricingCard.Value>
+          <PricingCard.Button>Choose Plan</PricingCard.Button>
+        </PricingCard.Body>
+
+        <PricingCard.Body className="bg-white p-10 rounded">
+          <PricingCard.Header className="mb-5">
+            <PricingCard.Cost>$100</PricingCard.Cost>
+            <PricingCard.Text>
+              For most businesses that want to otpimize web queries
+            </PricingCard.Text>
+          </PricingCard.Header>
+          <PricingCard.Value>All limited links</PricingCard.Value>
+          <PricingCard.Value>Own analytics platfo</PricingCard.Value>
+          <PricingCard.Value>Chat support</PricingCard.Value>
+          <PricingCard.Value>Optimize hashtags</PricingCard.Value>
+          <PricingCard.Value>Optimize hashtags</PricingCard.Value>
           <PricingCard.Button>Choose Plan</PricingCard.Button>
         </PricingCard.Body>
       </PricingCard>
