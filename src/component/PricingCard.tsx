@@ -58,9 +58,9 @@ PricingCard.Text = function PricingCardText({
   ...rest
 }: PricingCardProps) {
   return (
-    <h2 className={cn(className)} {...rest}>
+    <p className={cn("text-[#848199]", className)} {...rest}>
       {children}
-    </h2>
+    </p>
   );
 };
 PricingCard.Value = function PricingCardValue({
@@ -81,7 +81,13 @@ PricingCard.Button = function PricingCardButton({
   ...rest
 }: PricingCardProps) {
   return (
-    <button className={cn(className)} {...rest}>
+    <button
+      className={cn(
+        "w-full h-[45px] text-center text-[#F496D1] bg-[#F496D1] bg-opacity-10 font-semibold rounded-full",
+        className
+      )}
+      {...rest}
+    >
       {children}
     </button>
   );
