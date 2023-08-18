@@ -6,7 +6,6 @@ interface PricingCardProps {
   children: React.ReactNode;
   className?: string;
 }
-
 export const PricingCard = ({
   children,
   className,
@@ -37,7 +36,7 @@ PricingCard.Plan = function PricingCardPlan({
   return (
     <span
       className={cn(
-        "inline-block px-3 py-1 text-[#F496D1] bg-[#fa80cd] mb-5 font-semibold rounded-full bg-opacity-10",
+        "inline-block px-3 py-1 text-[#d445a0] bg-[#fa80cd] mb-5 font-semibold rounded-full bg-opacity-20",
         className
       )}
       {...rest}
@@ -53,8 +52,7 @@ PricingCard.Cost = function PricingCardCost({
 }: PricingCardProps) {
   return (
     <div className={cn("flex items-end gap-[10px] mb-6", className)} {...rest}>
-      <h2 className="text-[#231D4F] text-3xl font-semibold">{children}</h2>
-      <span className="text-[#848199]">/month</span>
+      {children}
     </div>
   );
 };
@@ -89,7 +87,7 @@ PricingCard.Button = function PricingCardButton({
   return (
     <button
       className={cn(
-        "w-full h-[45px] text-center text-[#F496D1] bg-[#F496D1] bg-opacity-10 font-semibold rounded-full",
+        "w-full h-[45px] mt-5 text-center text-[#d445a0] bg-[#F496D1] bg-opacity-20 font-semibold rounded-full",
         className
       )}
       {...rest}

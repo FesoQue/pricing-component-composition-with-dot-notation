@@ -2,7 +2,7 @@ import React from "react";
 
 const Header = () => {
   return (
-    <header className="text-center pt-20 mb-[110px]">
+    <header className="text-center mb-[110px]">
       <h1 className="text-4xl text-[#231D4F] font-bold mb-5">
         Simple, Pricing Component
       </h1>
