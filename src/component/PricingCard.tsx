@@ -60,7 +60,7 @@ PricingCard.Text = function PricingCardText({
     </p>
   );
 };
-PricingCard.Value = function PricingCardValue({
+PricingCard.Feature = function PricingCardFeature({
   children,
   className,
   ...rest
